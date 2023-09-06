@@ -1,0 +1,26 @@
+$carousel-height : 80vh;
+html,
+body,
+.view {
+  height: $carousel-height;
+}
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: $carousel-height;
+}
+
+.carousel .carousel-inner {
+  height: $carousel-height;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: $carousel-height;
+}
+
+img {
+  &.d-block {
+    height: $carousel-height;
+  }
+}

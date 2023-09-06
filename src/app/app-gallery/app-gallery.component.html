@@ -1,0 +1,30 @@
+<div>
+    <ul class="gallery">
+        <li *ngFor="let movie of movies">
+          <div class="view position-relative">
+              <img src="assets/{{movie.poster}}" alt="thumbnail" class="img-thumbnail">
+              <div class="position-absolute font-weight-bold text-center" 
+              style="background-color:  #ee693f; top:0; left: 20%; z-index: 99; color: white;
+              border: 5px solid  #ee693f; font-size: 12px; border-radius: 0 0 50px 50px; width: 60%;
+              ">
+              Adventure
+            </div>
+              <div class="movie-overlay mask pattern-6 flex-center" >
+                <mdb-icon fas icon="star" class="star"></mdb-icon>
+                <h3 class="white-text">7.8 / 10</h3>
+                <button mdbBtn class="waves-light position-absolute button-color" style="bottom: 10px;" mdbWavesEffect routerLink="/movie-details">
+                  Details
+                </button>
+              </div>
+          </div>
+          
+          <h5 class="text-truncate mt-3 text-white text-center" >
+              {{movie.title}}
+          </h5>
+
+          <h5 class="text-center text-white">
+              ({{movie.releaseDate}})
+          </h5>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,36 @@
+<div>
+    <div class="modal-header">
+        <h4 class="modal-title font-weight-bold w-100">
+            <mdb-icon fas icon="link" class="mr-1"></mdb-icon>
+            Add Link
+        </h4>
+    </div>
+
+    <div class="modal-body">
+        <p class="font-weight-bold">
+            Quality:
+        </p>
+
+        <select class="custom-control custom-select">
+            <option>720p</option>
+            <option>1080p</option>
+        </select>
+
+        <div class="md-form">
+            <input type="text" class="form-control" mdbInput placeholder="https://" style="color: black !important">
+        </div>
+    </div>
+
+    <div class="modal-footer text-white">
+        <button type="button" class="waves-light" aria-label="Add" mdbBtn mdbWavesEffect (click) = "add()" >
+            <mdb-icon fas icon="plus"></mdb-icon>
+            Add
+        </button>
+
+        <button type="button" class="waves-light" aria-label="Cancel" mdbBtn mdbWavesEffect (click) = "this.modalRef.hide()">
+            <mdb-icon fas icon="ban"></mdb-icon>
+            Cancel
+        </button>
+
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="container" style="font-family: 'Ultra';">
+
+    <h1 class="mt-5 text-white font-weight-bold">
+        <mdb-icon fas icon="tachometer-alt" class="mr-1"></mdb-icon>
+        Dashboard
+    </h1>
+
+    <div class="text-white text-center">
+        <div class="row">
+
+            <div class="col-lg-3 mt-5 " style="background-color: royalblue;">
+                <h3 class="mt-3 font-weight-bold">Date</h3>
+                <mdb-icon fas icon="calendar-alt" style="font-size: 70px;"></mdb-icon>
+                <h3 class="mt-3 font-weight-bold">01-05-2021</h3>
+            </div>
+
+            <div class="col-lg-3 mt-5" style="background-color: sandybrown;">
+                <h3 class="mt-3 font-weight-bold">Movies</h3>
+                <mdb-icon fas icon="film" style="font-size: 70px;"></mdb-icon>
+                <h3 class="mt-3 font-weight-bold">8000</h3>
+            </div>
+
+            <div class="col-lg-3 mt-5" style="background-color: skyblue;">
+                <h3 class="mt-3 font-weight-bold">Today's Visitors</h3>
+                <mdb-icon fas icon="users" style="font-size: 70px;"></mdb-icon>
+                <h3 class="mt-3 font-weight-bold">300000</h3>
+            </div>
+
+            <div class="col-lg-3 mt-5" style="background-color: teal;">
+                <h3 class="mt-3 font-weight-bold">Active Visitors</h3>
+                <mdb-icon fas icon="users" style="font-size: 70px;"></mdb-icon>
+                <h3 class="mt-3 font-weight-bold">25000</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mt-5 w-100" style="display: block;">
+                <canvas mdbChart
+                    [chartType] = "chartType"
+                    [datasets] = "chartDatasets"
+                    [labels] = "chartLabels"
+                    [colors] = "chartColors"
+                    [options] = "chartOptions"
+                    [legend] = "true"
+                    >
+                </canvas>
+            </div>
+        </div>
+
+        <br><br><br><br>
+    </div>
+</div>

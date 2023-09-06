@@ -1,0 +1,28 @@
+.menu {
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Ultra';
+}
+
+.menu-item {
+    font-size: large;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px 0 0 50px ;;
+    cursor: pointer;
+
+    a {
+       display: block;
+       color: white !important;
+    }
+}
+
+.menu-item:hover {
+    background-color: #ee693f;
+    transition: 0.3s ease-in;
+}
+
+.active-item {
+    background-color: #ee693f;
+}

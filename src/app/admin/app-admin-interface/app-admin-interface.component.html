@@ -1,0 +1,57 @@
+<div class="container-fluid" *ngIf="isLoged()">
+    <div class="row" style="height: 100vh;">
+
+        <div class="col-lg-3" style="background-color:#1e1f26; border-right: 3px solid #ee693f;" >
+            <div class= "row view" style="min-height: 250px;">
+                <div class="mask rgba-black-light waves-light" mdbWavesEffect>
+                    <img class="rounded-circle mx-auto mt-4" src="assets/admin1.png" alt="" style="width: 150px; height: 150px; border: 5px solid white;">
+                    <h3 class="text-center mt-3 text-white font-weight-bold h3-responsive" style="font-family: 'Ultra';">Admin</h3>
+                </div>
+            </div>
+
+            <div class= "row text-white" style="height: 69vh;">
+                <ul class="mt-3 w-100 menu">
+                    <li class="menu-item waves-light" mdbWavesEffect routerLinkActive="active-item">
+                        <a routerLink="/tmovies-admin-panel/dashboard">
+                            <mdb-icon class="mr-1" fas icon="tachometer-alt"></mdb-icon>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="menu-item waves-light" mdbWavesEffect routerLinkActive="active-item">
+                        <a routerLink="/tmovies-admin-panel/movies-list">
+                            <mdb-icon class="mr-1" fas icon="film"></mdb-icon>
+                            Movies List
+                        </a>
+                    </li>
+                    <li class="menu-item waves-light" mdbWavesEffect routerLinkActive="active-item">
+                        <a routerLink="/tmovies-admin-panel/maintenance">
+                            <mdb-icon class="mr-1" fas icon="tools"></mdb-icon>
+                            Maintenance
+                        </a>
+                    </li>
+                    <li class="menu-item waves-light" mdbWavesEffect routerLinkActive="active-item">
+                        <a class="text-white" routerLink="/tmovies-admin-panel/profile">
+                            <mdb-icon class="mr-1" fas icon="users-cog"></mdb-icon>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="menu-item waves-light" mdbWavesEffect (click) = "openLogoutModal()">
+                        <mdb-icon class="mr-1" fas icon="power-off"></mdb-icon>
+                        Logout
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row fixed-bottom" style="height: 55px; background-color: #16171d;">
+                <h6 class="w-100 text-center mt-3" style= "cursor: pointer;">
+                    <a class="text-white" routerLink="/">2021© Copyright: TMovies.cm</a>
+                </h6>
+            </div>
+        </div>
+    
+        <div class="col-lg-9" style="background-color:#1e1f26;">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+

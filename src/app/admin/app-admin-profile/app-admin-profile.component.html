@@ -1,0 +1,47 @@
+
+<form class="container mt-5 mb-5">
+    
+    <h1 class="text-white font-weight-bold" style="font-family: 'Ultra';">
+        <mdb-icon fas icon="users-cog" class="mr-1"></mdb-icon>
+        Profile
+    </h1>
+
+    <div class="md-form mt-5">
+        <mdb-icon fas icon="user-alt" class="prefix mr-1"></mdb-icon>
+        <input type="text" class="form-control" placeholder="Username" mdbInput>
+    </div>
+
+    <div class="md-form mt-5">
+        <mdb-icon fas icon="key" class="prefix mr-1"></mdb-icon>
+        <input type="password" class="form-control" placeholder="New password" mdbInput>
+    </div>
+
+    <div class="md-form mt-5">
+        <mdb-icon fas icon="key" class="prefix mr-1"></mdb-icon>
+        <input type="password" class="form-control" placeholder="Confirm password" mdbInput>
+    </div>
+
+    <div class="position-relative mt-5 row">
+
+        <div class="col-md-9">
+            <img src="assets/admin1.png" class="rounded-circle img-thumbnail ml-3" style="width: 150px; height: 150px;">
+        </div>
+    
+        <div class="col-md-3 d-flex align-items-center">
+            <button type="button" class="waves-light button-color mt-5" mdbBtn mdbWavesEffect>
+                <mdb-icon fas icon="camera" class="mr-1"></mdb-icon>
+                Change Photo
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="ml-3 text-white" style="margin-top: 200px;">
+        <button type="button" class="text-white waves-light button-color" mdbBtn mdbWavesEffect (click) = "openEditConfirmationModal()">
+            <mdb-icon fas icon="hdd" class="mr-1"></mdb-icon>
+            Save
+        </button>
+    </div>
+
+    <br><br><br>
+</form>

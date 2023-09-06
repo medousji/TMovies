@@ -1,0 +1,74 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark TMoviesSecondary" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand class="justify-content-start font-weight-bold ml-2">
+      <a class="navbar-brand" routerLink="/home" style="font-size: 25px;">
+          <mdb-icon fas icon="film"></mdb-icon>
+          TMovies
+      </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mx-auto font-weight-bold">
+          <li class="nav-item" routerLinkActive="main-link">
+              <a class="nav-link waves-light" routerLink="/home">
+                  <mdb-icon fas icon="home"></mdb-icon>
+                      Home
+                  <span class="sr-only">(current)</span>
+              </a>
+          </li>
+
+          <li class="nav-item" routerLinkActive="main-link">
+              <a class="nav-link waves-light" routerLink="/browse">
+                  <mdb-icon fas icon="glasses"></mdb-icon>
+                  Browse
+              </a>
+          </li>
+
+          <li class="nav-item" routerLinkActive="main-link">
+              <a class="nav-link waves-light" routerLink= "/random">
+                  <mdb-icon fas icon="random"></mdb-icon>
+                  Random
+              </a>
+          </li>
+      </ul>
+
+      <!-- Search form -->
+      <form class="form-inline waves-light" mdbWavesEffect>
+        <div class="md-form col-md-6 my-0 ">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search..." #searchBar 
+            (keyup) = "search(searchBar.value)" (blur) = "isSearching = false"
+            >
+        </div>
+      </form>
+
+      <!-- Links -->
+      
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+<router-outlet *ngIf="!isSearching"></router-outlet>
+
+<div *ngIf="isSearching">
+  <h4 class="text-white font-weight-bold text-center mt-5">Search Result</h4>
+  <app-app-gallery></app-app-gallery>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small TMoviesSecondary">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://TMovies.cm/"> TMovies.cm</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+<!-- Footer -->

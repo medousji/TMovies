@@ -1,0 +1,67 @@
+<div class="TMoviesPrimary">
+    <br>
+    <br>
+    
+    <form class="form-inline md-form container">
+        <div style="width: 100%">
+            <div class="md-form ">
+                <mdb-icon fas icon="search" class="prefix ml-1" id="search-icon"></mdb-icon>
+                <input class="form-control ml-5" type="text" placeholder="Search..." style="color: white" mdbInput id="search">
+            </div>
+
+            <div class="row ml-1 mt-1 font-weight-bold text-white">
+                <div class="col-md">
+                   <p>Sort:</p>
+                   <select class="browser-deafult custom-select filter-param">
+                        <option>A-Z</option>
+                        <option>Z-A</option>
+                    </select>
+                </div>
+    
+                <div class="col-md">
+                    <p>Genre:</p>
+                    <select class="browser-default custom-select filter-param">
+                        <option>Action</option>
+                        <option>Romance</option>
+                        <option>Horor</option>
+                    </select>
+                </div>
+    
+                <div class="col-md">
+                    <p>Year:</p>
+                    <select class="browser-default custom-select filter-param">
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                    </select>
+                </div>
+    
+                <div class="col-md">
+                    <p>Rating:</p>
+                    <select class="browser-defaul custom-select filter-param">
+                        <option>5+</option>
+                        <option>6+</option>
+                        <option>7+</option>
+                    </select>
+                </div>
+            </div>
+      
+        </div>
+    
+    </form>
+
+    <br>
+
+    <h5 class="text-center text-white">Displaying 26 of 8000</h5>
+    <br>
+
+    <app-app-pagination-bar></app-app-pagination-bar>
+    
+    <br><br>
+
+    <app-app-gallery></app-app-gallery>
+
+    <br>
+    <br>
+</div>

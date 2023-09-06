@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+$primary-color: #ee693f;
+
+.button-color {
+    background-color: $primary-color;
+    color: white !important;
+}
+.TMoviesPrimary {
+    color: #1e1f26;
+}
+
+.TMoviesSecondary {
+    background-color: #1e1f26;
+}
+
+.active {
+    background-color: $primary-color;
+}
+
+.title {
+    border-left: 5px solid $primary-color;
+    margin-top: 30px;
+    margin-left: 50px;
+
+    h4 {
+        color : white;
+        margin-left: 10px;
+        font-weight: bold;
+        font-family: 'Ultra';
+    }
+}
+
+.movie-img {
+    border: 5px solid $primary-color !important;
+    border-radius: 5px;
+    padding: 0 !important;
+}
+
+.main-text {
+    font-family: 'Ultra';
+    font-size: 60px;
+    text-shadow: 2px 2px 4px black,  2px 2px 4px black;
+    color: white;
+    text-align: center;
+}
+
+.navbar.navbar-dark form .md-form input:focus:not([readonly]) {
+    border-color: $primary-color !important;
+}
+
+.md-form input[type=text]:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 $primary-color !important;
+    border-bottom: 1px solid $primary-color !important;
+}
+    
+
+@font-face {
+    font-family: 'Lobster';
+    src: url(assets/Lobster/Lobster-Regular.ttf) format("truetype");
+    font-weight:300;
+}
+
+@font-face {
+    font-family: 'Grenze';
+    src: url(assets/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Ultra';
+    src: url(assets/Ultra/Ultra-Regular.ttf) format("tyretype");
+    font-weight: 300;
+}
+
+#search-icon {
+    color: $primary-color !important;
+}
+
+body {
+    background-color: #1e1f26;
+}
+
+.main-link {
+    background-color: $primary-color;
+    border-radius: 50px 0 50px 0;
+    padding: 5px;
+}
+
+.background-primary {
+    background-color: #1e1f26;
+}
+
+input[type]:focus {
+    box-shadow: 0 1px 0 0 $primary-color !important;
+    border-bottom: 1px solid $primary-color !important;
+    color: white;
+}
+
+textarea:focus {
+    box-shadow: 0 1px 0 0 $primary-color !important;
+    border-bottom: 1px solid $primary-color !important;
+    color: white !important;
+}
